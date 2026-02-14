@@ -18,7 +18,8 @@ body{
 
 .container{
     border-top:6px solid #0033cc;
-    width:900px;
+    max-width:900px;
+    width:90%;
     margin:40px auto;
     padding:40px;
 }
@@ -54,8 +55,9 @@ h2{
     padding:25px;
     border-radius:8px;
     box-shadow:0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
     margin: 30px 0;
+    border-left: 4px solid #0033cc;
 }
 
  .section:hover{
@@ -72,11 +74,6 @@ ul{
     margin-top:5px;
 }
 
-.header-contact{
-    margin-bottom:20px;
-    margin-left:282px;
-}
-
 a{
    color:#0033cc;
    text-decoration:none;
@@ -86,19 +83,21 @@ a{
     text-decoration:underline;
     color:#001a66;
  }
-
+ 
 p{
  line-height: 24px;
 }
 
+ footer{
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+    color:#666
+ }
+
 @media (max-width:768px){
 
-.header-contact{
-  margin-left:0;
-     text-align:center;
-  }
-
-    h1 img{
+    .header img{
         display:block;
         margin:0 auto 15px auto;
     }
@@ -109,6 +108,8 @@ p{
         text-align:left;
     }
 }
+
+
  
 </style>
 </head>
@@ -128,10 +129,10 @@ p{
 <div class="section">
  
 <h2>Professional Summary</h2>
+ 
 <p>
 Fourth-year Industrial Automation Systems Engineering student at McMaster University with hands-on experience in PLC programming,
-industrial instrumentation, and process control within manufacturing environments. Also pursuing an Advanced Diploma in chemical engineering and
-a business management certificate from Mohawk College. Proficient with Allen-Bradley systems, PID tuning, and AutoCAD documentation, with 
+industrial instrumentation, and process control within manufacturing environments. Proficient with Allen-Bradley systems, PID tuning, and AutoCAD documentation, with 
 co-op experience supporting real production and water treatment systems. Seeking full-time roles in automation, controls, or manufacturing engineering.
 </p>
 
@@ -140,16 +141,6 @@ co-op experience supporting real production and water treatment systems. Seeking
 <div class="section">
  
 <h2>Education</h2>
-
-<p>
-<b>Sir Wilfrid Laurier Collegiate Institute</b> <span class="date">2017 – 2021</span><br>
-Ontario Secondary School Diploma (OSSD)
-</p>
-
-<p>
-<b>Sir Wilfrid Laurier Collegiate Institute</b> <span class="date">2019 – 2021</span><br>
-International Baccalaureate Diploma (IBDP)
-</p>
 
 <p>
 <b>McMaster University</b> <span class="date">2021 – 2026</span><br>
@@ -161,32 +152,17 @@ B.Tech. (Co-op) Automation Systems Engineering Technology — <b>3.8 GPA</b>
 Advanced Diploma in Chemical Engineering & Business Management Certificate
 </p>
 
+<p>
+<b>Sir Wilfrid Laurier Collegiate Institute</b> <span class="date">2019 – 2021</span><br>
+International Baccalaureate Diploma (IBDP)
+</p>
+ 
 </div>
  
 <div class="section">
  
 <h2>Professional Experience</h2>
 
-<p>
-<span class="job-title"> <em> <b><a href = "https://nationalmolding.com/locations/nmc-dynaplas-toronto/">Machine Operator - Dynaplas</a></b></em></span>
-<span class="date"> May 2019 - September 2019</span>
-</p>
-    <ul>
-        <li style="font-family:'Arial'"> learned how to use various machines and objects that are commonly found in the workplace or in a lab, such as a welder and an industrial oven.</li>
-        <li style="font-family:'Arial'"> Efficiently created many face shields in a team environment with many other over the 2-month period.</li>
-    </ul>
-<p>
-
-<p>
-<span class="job-title"><b><em><a href = "https://www.mcmaster.ca/">Research Assistant - McMaster University</a> </b> </em></span>
-<span class="date">May 2022 – Aug 2022</span>
-</p>
-    <ul>
-        <li>Created documentation and data collection materials including instructions and schedules.</li>
-        <li>Extracted critical procedures from research papers for literature reviews.</li>
-        <li>Organized and analyzed research data using Word and Excel.</li>
-        <li>Completed Tri-Council Research Ethics certification.</li>
-    </ul>
 <p>
 
 <span class="job-title"><em><b><a href = "https://www.aspirebakeries.com/brands-oakrun-farm">Engineering Services Engineering Co-op — Aspire Bakeries</a></b></em></span>
@@ -198,11 +174,41 @@ Advanced Diploma in Chemical Engineering & Business Management Certificate
         <li>Supported renovation planning and pipe installation project management.</li>
     </ul>
 
+<p>
+<span class="job-title"><b><em><a href = "https://www.mcmaster.ca/">Research Assistant - McMaster University</a> </b> </em></span>
+<span class="date">May 2022 – Aug 2022</span>
+</p>
+    <ul>
+        <li>Created documentation and data collection materials including instructions and schedules.</li>
+        <li>Extracted critical procedures from research papers for literature reviews.</li>
+        <li>Organized and analyzed research data using Word and Excel.</li>
+        <li>Completed Tri-Council Research Ethics certification.</li>
+    </ul>
+
+<p>
+<span class="job-title"> <em> <b><a href = "https://nationalmolding.com/locations/nmc-dynaplas-toronto/">Machine Operator - Dynaplas</a></b></em></span>
+<span class="date"> May 2019 - September 2019</span>
+</p>
+    <ul>
+        <li style="font-family:'Arial'"> learned how to use various machines and objects that are commonly found in the workplace or in a lab, such as a welder and an industrial oven.</li>
+        <li style="font-family:'Arial'"> Efficiently created many face shields in a team environment with many other over the 2-month period.</li>
+    </ul>
+<p>
+
 </div>
 
 <div class="section">
  
 <h2>Selected Engineering Projects</h2>
+
+ <p><b>Electrical Engineering & Feedback Control</b> <span class="date">Jan 2022 – Apr 2024</span></p>
+    <ul>
+        <li>Designed PID feedback loops using MATLAB and Simulink.</li>
+        <li>Modeled chemical processes in UniSim Design.</li>
+        <li>Built circuits including BJTs, filters, and control systems.</li>
+        <li>Created CAD models using AutoCAD and SolidWorks.</li>
+        <li>Created a Smart Pill Dispenser Prototype with responsive cloud HMI.</li>
+    </ul>
 
 <p><b>Coding Experience</b> <span class="date">Sept 2021 – Dec 2023</span></p>
 <ul>
@@ -215,14 +221,6 @@ Advanced Diploma in Chemical Engineering & Business Management Certificate
     <ul>
         <li>Applied financial and project management principles to engineering problems.</li>
         <li>Worked independently and in teams on business-focused engineering scenarios.</li>
-    </ul>
-
-<p><b>Electrical Engineering & Feedback Control</b> <span class="date">Jan 2022 – Apr 2024</span></p>
-    <ul>
-        <li>Designed PID feedback loops using MATLAB and Simulink.</li>
-        <li>Modeled chemical processes in UniSim Design.</li>
-        <li>Built circuits including BJTs, filters, and control systems.</li>
-        <li>Created CAD models using AutoCAD and SolidWorks.</li>
     </ul>
 
 </div>
@@ -242,10 +240,10 @@ Advanced Diploma in Chemical Engineering & Business Management Certificate
 <div class="section">
     <h2> Professionial Associations & Extra-Curriculars</h2>
         <ol>
-            <li style="font-family:'Arial'"> <em> <b> McMaster CVITP Tax Squad; January 2026 - June 2026 </b> </em> </li>
-               <ul> <li style="font-family:'Arial'"> Helping McMaster students file taxes for the 2025 year. </li> </ul>
-            <li style="font-family:'Arial'"> <em> <b> Tutoring - Sir Wilfrid Laurier CI; September 2017 - June 2019 </b> </em> </li>
-                <ul><li style="font-family:'Arial'"> Math Tutor for all students between grades 9 and 12 for advanced functions and calculus.</li></ul>
+            <li> <em> <b> McMaster CVITP Tax Squad; January 2026 - June 2026 </b> </em> </li>
+               <ul> <li> Helping McMaster students file taxes for the 2025 year. </li> </ul>
+            <li> <em> <b> Tutoring - Sir Wilfrid Laurier CI; September 2017 - June 2019 </b> </em> </li>
+                <ul><li> Math Tutor for all students between grades 9 and 12 for advanced functions and calculus.</li></ul>
         </ol>
 </div>
 
@@ -256,6 +254,7 @@ Advanced Diploma in Chemical Engineering & Business Management Certificate
 </body>
 
 </html>
+
 
 
 
